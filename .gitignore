@@ -1,0 +1,67 @@
+# ========================
+# Rust
+# ========================
+/target/
+**/target/
+**/*.rs.bk
+Cargo.lock
+# For Rust build artifacts in examples, testing, etc.
+**/*.rlib
+**/*.dSYM
+
+# ========================
+# Java
+# ========================
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.log
+*.tmp
+*.swp
+hs_err_pid*
+replay_pid*
+
+# Maven / Gradle
+/.mvn/
+/.gradle/
+/build/
+**/out/
+!gradle-wrapper.jar
+
+# IntelliJ IDEA / JetBrains
+.idea/
+*.iws
+*.ipr
+.idea_modules/
+
+# VS Code
+.vscode/
+
+# ========================
+# OS + Editor Junk
+# ========================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*.bak
+*.~*
+*.sublime-workspace
+*.sublime-project
+*.orig
+
+# ========================
+# Logs / Debugging
+# ========================
+*.trace
+
+# ========================
+# Other
+# ========================
+/node_modules/
+.env
+.env.local
+.cache/
+dist/
+coverage/

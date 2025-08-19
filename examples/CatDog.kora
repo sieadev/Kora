@@ -1,0 +1,31 @@
+// Usually a file can only contain one class. 
+// To simplify this example I'll stick to one file though.
+
+class Animal {
+    // Descend method: must not have a body
+    descend void speak();
+
+    // Final method that can not be modified
+    public final void breathe() {
+        print "Breathing...";
+    }
+}
+
+class Dog extends Animal {
+    // Must implement descend method
+    inherited void speak() {
+        print "Woof!";
+    }
+
+    // Additional method
+    public void fetch() {
+        print "Fetching the ball!";
+    }
+}
+
+// Making a class final makes it not inheritable
+final class Cat extends Animal {
+    inherited void speak() {
+        print "Meow!";
+    }
+}

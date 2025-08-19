@@ -1,0 +1,17 @@
+class Employee extends Person {
+    // Variables default to private
+    string position;
+    int salary;
+
+    public Employee(string name, int age, string position, int salary) {
+        super(name, age); // I really don't like this. Will probably change
+        this.position = position;
+        this.salary = salary;
+    }
+
+    // Override greet method
+	// Also inherits the visibility modifier
+    inherited void greet() {
+        print "Hello, I am " + name + ", working as " + position;
+    }
+}

@@ -1,0 +1,20 @@
+class Counter {
+    // Final variable cannot be changed after initialization
+    final int maxCount;
+    int current;
+
+    public Counter(int max) {
+        this.maxCount = max;
+        this.current = 0;
+    }
+
+    public void increment() {
+        if (current < maxCount) {
+            current = current + 1;
+        }
+    }
+
+    public int getCurrent() {
+        return current;
+    }
+}

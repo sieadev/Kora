@@ -1,0 +1,13 @@
+// 'Entry' class:
+// This is the entry point of your Kora programm.
+// Because Kora does not have static methods the infamous 
+// 'public static void main...' does not work here. Instead
+// The compiler makes sure there is at most one entry class
+// (and method), which an instance will be created of when
+// your programm is first executed. Honestly I would love 
+// to hear feedback on this idea.
+entry class MyClass {
+    public void entry(String[] args) {
+        print("Hello, World!");
+    }
+}

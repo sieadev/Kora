@@ -1,0 +1,23 @@
+class Person {
+    protected string name;
+    protected age;
+
+    // Constructor
+    public Person(string name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    // Public method to greet
+	// No need for brackets if you are not expecting arguments
+    public void greet {
+        // Method calls without brackets are allowed
+        print generateGreet;
+    }
+
+    // Methods to private
+	// Leaving out the brackets is optional though. All the same to the compiler :p
+    String generateGreet() {
+        return "Hello, my name is " + name + " and I am " + age + " years old.";
+    }
+}

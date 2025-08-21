@@ -7,19 +7,19 @@ class Animal {
 
     // Final method that can not be modified
     public final void breathe() {
-        print "Breathing...";
+        print("Breathing...");
     }
 }
 
 class Dog extends Animal {
     // Must implement descend method
     inherited void speak() {
-        print "Woof!";
+        print("Woof!");
     }
 
     // Additional method
     public void fetch() {
-        print "Fetching the ball!";
+        print("Fetching the ball!");
     }
 }
 
